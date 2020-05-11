@@ -1,0 +1,52 @@
+{
+  "name": "@elunic/ecs-tslint",
+  "version": "0.1.0",
+  "description": "The elunic coding styles for TSlint",
+  "files": [
+    "tslint*.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
+  "lint-staged": {
+    "tslint*.json": [
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elunic/ecs-tslint.git"
+  },
+  "keywords": [
+    "elunic",
+    "typescript",
+    "tslint",
+    "styles",
+    "ecs"
+  ],
+  "author": {
+    "name": "William Hefter",
+    "email": "wh@elunic.com"
+  },
+  "devDependencies": {
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.0",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
