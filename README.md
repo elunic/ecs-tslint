@@ -36,6 +36,8 @@ not yet switched to `eslint`.
 - `tslint-angular8.fix.json`
 - `tslint-angular9.json`
 - `tslint-angular9.fix.json`
+- `tslint-angular10.json`
+- `tslint-angular10.fix.json`
 - `tslint-react16.json`
 - `tslint-react16.fix.json`
 
